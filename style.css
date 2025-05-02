@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:system-ui, sans-serif;
+    background-color:#222;
+    color: #fff ;
+}
+.crud{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: #111;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 4px;
+    color: #fff;
+}
+input:focus{
+    background-color:black;
+    transform: scale(1.1);
+}
+.price input{
+    width: 20%;
+}
+#total{
+    background-color: #d22a1e;
+    padding: 5px 2px;
+    border-radius: 4px;
+}
+#total::before{
+    content: "Total: ";
+}
+button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #ff7043;
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: #ff5722;
+    letter-spacing: 1px;
+}
+
+.btnSearsh{
+    display: flex;
+    justify-content: space-between;
+}
+.btnSearsh button{
+    width: 45%;
+}
+table{
+    width: 100% ;
+    text-align: center;
+    margin: 10px 0;
+}
+table th{
+    text-transform: uppercase;;
+}
+table th, table td{
+    padding: 5px;
+}
+.popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #a00d02;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    font-weight: bold;
+    z-index: 9999;
+    animation: slideUp 0.5s ease;
+}
+
+.popup.success {
+    background-color: #28a745;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
